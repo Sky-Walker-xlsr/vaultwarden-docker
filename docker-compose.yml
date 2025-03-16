@@ -9,7 +9,7 @@ services:
       - DATABASE_URL=postgresql://vaultwarden:supersecurepassword@postgres:5432/vaultwarden
       - ADMIN_TOKEN=jcOyPahoV0HQGJsaUhslVyzzSBUBUwLicjvB0v7LKhCyUs51CzYZZF0qGPu61xJD
     ports:
-      - "0.0.0.0:8080:80"
+      - "8080"
     depends_on:
       - postgres
     networks:
