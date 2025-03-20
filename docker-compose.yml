@@ -8,6 +8,13 @@ services:
     environment:
       - DATABASE_URL=postgresql://vaultwarden:supersecurepassword@postgres:5432/vaultwarden
       - ADMIN_TOKEN=jcOyPahoV0HQGJsaUhslVyzzSBUBUwLicjvB0v7LKhCyUs51CzYZZF0qGPu61xJD
+      - SIGNUPS_ALLOWED=false
+      - ADMIN_TOKEN=HierDeinSichererToken
+      - PASSWORD_HINTS_ALLOWED=false
+      - REQUIRE_DEVICE_EMAIL_CONFIRMATION=true
+      - DISABLE_SEND=1
+      - PASSWORD_MIN_LENGTH=12
+      - PASSWORD_CHECK_HIBP=true
     ports:
       - "8080"
     depends_on:
