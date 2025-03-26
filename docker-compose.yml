@@ -16,7 +16,7 @@ services:
       - PASSWORD_MIN_LENGTH=12
       - PASSWORD_CHECK_HIBP=true
     ports:
-      - "8080"
+      - "8080:80"
     depends_on:
       - postgres
     networks:
